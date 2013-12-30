@@ -1,0 +1,1 @@
+{ name=lru, line_size = 128, entries = 3072, ways=4, policy=lru, victim=65536 }

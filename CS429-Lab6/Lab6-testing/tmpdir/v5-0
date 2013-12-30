@@ -1,0 +1,8 @@
+      200119 addresses (149800 Fetch, 38425 Load, 11894 Store)
+fifo main cache: 256 entries of lines of 64 bytes; 64 sets of 4 ways, write-back, FIFO
+fifo main cache: 206234 accesses, 201666 hits (97%), 4568 misses, 4459 miss reads, 611 miss writes
+fifo main cache: 41 dirty cache lines remain
+fifo victim cache: 1 entries of lines of 64 bytes; direct-mapped, write-back, FIFO
+fifo victim cache: 4312 accesses, 109 hits (2%), 4203 misses, 4203 miss reads, 589 miss writes
+fifo victim cache: 0 dirty cache lines remain
+

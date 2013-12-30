@@ -1,0 +1,8 @@
+      400000 addresses (288259 Fetch, 80098 Load, 31643 Store)
+lfu100 main cache: 1024 entries of lines of 128 bytes; 256 sets of 4 ways, write-back, LFU (decay=10000000)
+lfu100 main cache: 406028 accesses, 403856 hits (99%), 2172 misses, 1808 miss reads, 195 miss writes
+lfu100 main cache: 177 dirty cache lines remain
+lfu100 victim cache: 128 entries of lines of 128 bytes; fully associative, write-back, FIFO
+lfu100 victim cache: 1164 accesses, 364 hits (31%), 800 misses, 800 miss reads, 92 miss writes
+lfu100 victim cache: 11 dirty cache lines remain
+

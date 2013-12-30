@@ -1,0 +1,161 @@
+==10940== Memcheck, a memory error detector
+==10940== Copyright (C) 2002-2011, and GNU GPL'd, by Julian Seward et al.
+==10940== Using Valgrind-3.7.0 and LibVEX; rerun with -h for copyright info
+==10940== Command: ./facts cases/books.fax cases/books.q
+==10940== Parent PID: 10938
+==10940== 
+==10940== Conditional jump or move depends on uninitialised value(s)
+==10940==    at 0x4009A2: trimString (facts.c:97)
+==10940==    by 0x400EDB: read (facts.c:186)
+==10940==    by 0x400880: main (facts.c:49)
+==10940== 
+==10940== Conditional jump or move depends on uninitialised value(s)
+==10940==    at 0x400F09: read (facts.c:188)
+==10940==    by 0x400880: main (facts.c:49)
+==10940== 
+==10940== Invalid write of size 1
+==10940==    at 0x4C2D0E8: memcpy@@GLIBC_2.14 (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==10940==    by 0x400F31: read (facts.c:188)
+==10940==    by 0x400880: main (facts.c:49)
+==10940==  Address 0x51f259b is 3 bytes after a block of size 8 alloc'd
+==10940==    at 0x4C2B6CD: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==10940==    by 0x400EE9: read (facts.c:187)
+==10940==    by 0x400880: main (facts.c:49)
+==10940== 
+==10940== Conditional jump or move depends on uninitialised value(s)
+==10940==    at 0x400FCC: read (facts.c:203)
+==10940==    by 0x400880: main (facts.c:49)
+==10940== 
+==10940== Invalid write of size 8
+==10940==    at 0x40100F: read (facts.c:205)
+==10940==    by 0x400880: main (facts.c:49)
+==10940==  Address 0x51f25e0 is 0 bytes inside a block of size 5 alloc'd
+==10940==    at 0x4C2B6CD: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==10940==    by 0x400A0B: trimString (facts.c:103)
+==10940==    by 0x400F9E: read (facts.c:201)
+==10940==    by 0x400880: main (facts.c:49)
+==10940== 
+==10940== Conditional jump or move depends on uninitialised value(s)
+==10940==    at 0x400B46: read (facts.c:134)
+==10940==    by 0x400880: main (facts.c:49)
+==10940== 
+==10940== Invalid write of size 1
+==10940==    at 0x4C2D0E8: memcpy@@GLIBC_2.14 (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==10940==    by 0x400B6E: read (facts.c:134)
+==10940==    by 0x400880: main (facts.c:49)
+==10940==  Address 0x51f26da is 2 bytes after a block of size 8 alloc'd
+==10940==    at 0x4C2B6CD: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==10940==    by 0x400B26: read (facts.c:133)
+==10940==    by 0x400880: main (facts.c:49)
+==10940== 
+==10940== Invalid read of size 1
+==10940==    at 0x400BB3: read (facts.c:139)
+==10940==    by 0x400880: main (facts.c:49)
+==10940==  Address 0x51f2598 is 0 bytes after a block of size 8 alloc'd
+==10940==    at 0x4C2B6CD: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==10940==    by 0x400EE9: read (facts.c:187)
+==10940==    by 0x400880: main (facts.c:49)
+==10940== 
+==10940== Invalid read of size 1
+==10940==    at 0x400BF1: read (facts.c:140)
+==10940==    by 0x400880: main (facts.c:49)
+==10940==  Address 0x51f2598 is 0 bytes after a block of size 8 alloc'd
+==10940==    at 0x4C2B6CD: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==10940==    by 0x400EE9: read (facts.c:187)
+==10940==    by 0x400880: main (facts.c:49)
+==10940== 
+==10940== Invalid read of size 1
+==10940==    at 0x4C2D0E1: memcpy@@GLIBC_2.14 (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==10940==    by 0x400C1D: read (facts.c:140)
+==10940==    by 0x400880: main (facts.c:49)
+==10940==  Address 0x51f259b is 3 bytes after a block of size 8 alloc'd
+==10940==    at 0x4C2B6CD: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==10940==    by 0x400EE9: read (facts.c:187)
+==10940==    by 0x400880: main (facts.c:49)
+==10940== 
+==10940== Conditional jump or move depends on uninitialised value(s)
+==10940==    at 0x400CA2: read (facts.c:151)
+==10940==    by 0x400880: main (facts.c:49)
+==10940== 
+==10940== Conditional jump or move depends on uninitialised value(s)
+==10940==    at 0x400CE0: read (facts.c:152)
+==10940==    by 0x400880: main (facts.c:49)
+==10940== 
+==10940== Invalid read of size 1
+==10940==    at 0x400D37: read (facts.c:155)
+==10940==    by 0x400880: main (facts.c:49)
+==10940==  Address 0x51f26d8 is 0 bytes after a block of size 8 alloc'd
+==10940==    at 0x4C2B6CD: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==10940==    by 0x400B26: read (facts.c:133)
+==10940==    by 0x400880: main (facts.c:49)
+==10940== 
+==10940== Invalid read of size 1
+==10940==    at 0x400D75: read (facts.c:156)
+==10940==    by 0x400880: main (facts.c:49)
+==10940==  Address 0x51f26d8 is 0 bytes after a block of size 8 alloc'd
+==10940==    at 0x4C2B6CD: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==10940==    by 0x400B26: read (facts.c:133)
+==10940==    by 0x400880: main (facts.c:49)
+==10940== 
+==10940== Invalid read of size 1
+==10940==    at 0x4C2D0E1: memcpy@@GLIBC_2.14 (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==10940==    by 0x400DA1: read (facts.c:156)
+==10940==    by 0x400880: main (facts.c:49)
+==10940==  Address 0x51f26da is 2 bytes after a block of size 8 alloc'd
+==10940==    at 0x4C2B6CD: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==10940==    by 0x400B26: read (facts.c:133)
+==10940==    by 0x400880: main (facts.c:49)
+==10940== 
+==10940== Invalid write of size 8
+==10940==    at 0x4C2D10D: memcpy@@GLIBC_2.14 (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==10940==    by 0x400B6E: read (facts.c:134)
+==10940==    by 0x400880: main (facts.c:49)
+==10940==  Address 0x51f2aa0 is not stack'd, malloc'd or (recently) free'd
+==10940== 
+==10940== Invalid read of size 8
+==10940==    at 0x4C2D108: memcpy@@GLIBC_2.14 (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==10940==    by 0x400DA1: read (facts.c:156)
+==10940==    by 0x400880: main (facts.c:49)
+==10940==  Address 0x51f2aa0 is not stack'd, malloc'd or (recently) free'd
+==10940== 
+==10940== Invalid read of size 8
+==10940==    at 0x4C2D11A: memcpy@@GLIBC_2.14 (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==10940==    by 0x400DA1: read (facts.c:156)
+==10940==    by 0x400880: main (facts.c:49)
+==10940==  Address 0x51f2a90 is 8 bytes after a block of size 8 alloc'd
+==10940==    at 0x4C2B6CD: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==10940==    by 0x400B26: read (facts.c:133)
+==10940==    by 0x400880: main (facts.c:49)
+==10940== 
+--10940-- VALGRIND INTERNAL ERROR: Valgrind received a signal 11 (SIGSEGV) - exiting
+--10940-- si_code=80;  Faulting address: 0x0;  sp: 0x402bdae00
+
+valgrind: the 'impossible' happened:
+   Killed by fatal signal
+==10940==    at 0x38058236: ??? (in /usr/lib/valgrind/memcheck-amd64-linux)
+==10940==    by 0x38021ADC: ??? (in /usr/lib/valgrind/memcheck-amd64-linux)
+==10940==    by 0x38021C6A: ??? (in /usr/lib/valgrind/memcheck-amd64-linux)
+==10940==    by 0x380902A7: ??? (in /usr/lib/valgrind/memcheck-amd64-linux)
+==10940==    by 0x3809F7D5: ??? (in /usr/lib/valgrind/memcheck-amd64-linux)
+
+sched status:
+  running_tid=1
+
+Thread 1: status = VgTs_Runnable
+==10940==    at 0x4C2B6CD: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==10940==    by 0x400B93: read (facts.c:137)
+==10940==    by 0x400880: main (facts.c:49)
+
+
+Note: see also the FAQ in the source distribution.
+It contains workarounds to several common problems.
+In particular, if Valgrind aborted or crashed after
+identifying problems in your program, there's a good chance
+that fixing those problems will prevent Valgrind aborting or
+crashing, especially if it happened in m_mallocfree.c.
+
+If that doesn't help, please report this bug to: www.valgrind.org
+
+In the bug report, send all the above text, the valgrind
+version, and what OS and version you are using.  Thanks.
+

@@ -1,0 +1,1 @@
+{ name=lfu05, line_size = 128, entries = 1024, ways=4, policy=lfu, decay_interval = 050000, victim = 4 }

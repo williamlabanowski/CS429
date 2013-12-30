@@ -1,0 +1,230 @@
+==10921== Memcheck, a memory error detector
+==10921== Copyright (C) 2002-2011, and GNU GPL'd, by Julian Seward et al.
+==10921== Using Valgrind-3.7.0 and LibVEX; rerun with -h for copyright info
+==10921== Command: ./facts /dev/null cases/nofacts.Q
+==10921== Parent PID: 10919
+==10921== 
+==10921== Use of uninitialised value of size 8
+==10921==    at 0x40158D: write (facts.c:319)
+==10921==    by 0x4008A4: main (facts.c:53)
+==10921== 
+==10921== Use of uninitialised value of size 8
+==10921==    at 0x4009A2: trimString (facts.c:97)
+==10921==    by 0x4014F7: write (facts.c:310)
+==10921==    by 0x4008A4: main (facts.c:53)
+==10921== 
+==10921== Conditional jump or move depends on uninitialised value(s)
+==10921==    at 0x4009A2: trimString (facts.c:97)
+==10921==    by 0x4014F7: write (facts.c:310)
+==10921==    by 0x4008A4: main (facts.c:53)
+==10921== 
+==10921== Use of uninitialised value of size 8
+==10921==    at 0x4009C0: trimString (facts.c:98)
+==10921==    by 0x4014F7: write (facts.c:310)
+==10921==    by 0x4008A4: main (facts.c:53)
+==10921== 
+==10921== Use of uninitialised value of size 8
+==10921==    at 0x4009E4: trimString (facts.c:100)
+==10921==    by 0x4014F7: write (facts.c:310)
+==10921==    by 0x4008A4: main (facts.c:53)
+==10921== 
+==10921== Conditional jump or move depends on uninitialised value(s)
+==10921==    at 0x4C2CF49: memcpy@@GLIBC_2.14 (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==10921==    by 0x400A30: trimString (facts.c:104)
+==10921==    by 0x4014F7: write (facts.c:310)
+==10921==    by 0x4008A4: main (facts.c:53)
+==10921== 
+==10921== Conditional jump or move depends on uninitialised value(s)
+==10921==    at 0x4C2CF5E: memcpy@@GLIBC_2.14 (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==10921==    by 0x400A30: trimString (facts.c:104)
+==10921==    by 0x4014F7: write (facts.c:310)
+==10921==    by 0x4008A4: main (facts.c:53)
+==10921== 
+==10921== Conditional jump or move depends on uninitialised value(s)
+==10921==    at 0x4C2CFAB: memcpy@@GLIBC_2.14 (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==10921==    by 0x400A30: trimString (facts.c:104)
+==10921==    by 0x4014F7: write (facts.c:310)
+==10921==    by 0x4008A4: main (facts.c:53)
+==10921== 
+==10921== Conditional jump or move depends on uninitialised value(s)
+==10921==    at 0x4C2D0B0: memcpy@@GLIBC_2.14 (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==10921==    by 0x400A30: trimString (facts.c:104)
+==10921==    by 0x4014F7: write (facts.c:310)
+==10921==    by 0x4008A4: main (facts.c:53)
+==10921== 
+==10921== Conditional jump or move depends on uninitialised value(s)
+==10921==    at 0x4C2D0C1: memcpy@@GLIBC_2.14 (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==10921==    by 0x400A30: trimString (facts.c:104)
+==10921==    by 0x4014F7: write (facts.c:310)
+==10921==    by 0x4008A4: main (facts.c:53)
+==10921== 
+==10921== Use of uninitialised value of size 8
+==10921==    at 0x4C2D1A0: memcpy@@GLIBC_2.14 (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==10921==    by 0x400A30: trimString (facts.c:104)
+==10921==    by 0x4014F7: write (facts.c:310)
+==10921==    by 0x4008A4: main (facts.c:53)
+==10921== 
+==10921== Use of uninitialised value of size 8
+==10921==    at 0x4C2D1AD: memcpy@@GLIBC_2.14 (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==10921==    by 0x400A30: trimString (facts.c:104)
+==10921==    by 0x4014F7: write (facts.c:310)
+==10921==    by 0x4008A4: main (facts.c:53)
+==10921== 
+==10921== Conditional jump or move depends on uninitialised value(s)
+==10921==    at 0x401525: write (facts.c:312)
+==10921==    by 0x4008A4: main (facts.c:53)
+==10921== 
+==10921== Conditional jump or move depends on uninitialised value(s)
+==10921==    at 0x4C2E0A8: memset (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==10921==    by 0x401567: write (facts.c:313)
+==10921==    by 0x4008A4: main (facts.c:53)
+==10921== 
+==10921== Use of uninitialised value of size 8
+==10921==    at 0x4C2E0E0: memset (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==10921==    by 0x401567: write (facts.c:313)
+==10921==    by 0x4008A4: main (facts.c:53)
+==10921== 
+==10921== Use of uninitialised value of size 8
+==10921==    at 0x4C2E0EB: memset (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==10921==    by 0x401567: write (facts.c:313)
+==10921==    by 0x4008A4: main (facts.c:53)
+==10921== 
+==10921== Invalid write of size 8
+==10921==    at 0x40156C: write (facts.c:314)
+==10921==    by 0x4008A4: main (facts.c:53)
+==10921==  Address 0x51f27c0 is 0 bytes inside a block of size 6 alloc'd
+==10921==    at 0x4C2B6CD: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==10921==    by 0x400A0B: trimString (facts.c:103)
+==10921==    by 0x4014F7: write (facts.c:310)
+==10921==    by 0x4008A4: main (facts.c:53)
+==10921== 
+==10921== Use of uninitialised value of size 8
+==10921==    at 0x4015A8: write (facts.c:324)
+==10921==    by 0x4008A4: main (facts.c:53)
+==10921== 
+==10921== Use of uninitialised value of size 8
+==10921==    at 0x4009A2: trimString (facts.c:97)
+==10921==    by 0x4011F7: write (facts.c:273)
+==10921==    by 0x4008A4: main (facts.c:53)
+==10921== 
+==10921== Use of uninitialised value of size 8
+==10921==    at 0x4009C0: trimString (facts.c:98)
+==10921==    by 0x4011F7: write (facts.c:273)
+==10921==    by 0x4008A4: main (facts.c:53)
+==10921== 
+==10921== Use of uninitialised value of size 8
+==10921==    at 0x4009E4: trimString (facts.c:100)
+==10921==    by 0x4011F7: write (facts.c:273)
+==10921==    by 0x4008A4: main (facts.c:53)
+==10921== 
+==10921== Conditional jump or move depends on uninitialised value(s)
+==10921==    at 0x4C2CF49: memcpy@@GLIBC_2.14 (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==10921==    by 0x400A30: trimString (facts.c:104)
+==10921==    by 0x4011F7: write (facts.c:273)
+==10921==    by 0x4008A4: main (facts.c:53)
+==10921== 
+==10921== Conditional jump or move depends on uninitialised value(s)
+==10921==    at 0x4C2CF5E: memcpy@@GLIBC_2.14 (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==10921==    by 0x400A30: trimString (facts.c:104)
+==10921==    by 0x4011F7: write (facts.c:273)
+==10921==    by 0x4008A4: main (facts.c:53)
+==10921== 
+==10921== Conditional jump or move depends on uninitialised value(s)
+==10921==    at 0x4C2CFAB: memcpy@@GLIBC_2.14 (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==10921==    by 0x400A30: trimString (facts.c:104)
+==10921==    by 0x4011F7: write (facts.c:273)
+==10921==    by 0x4008A4: main (facts.c:53)
+==10921== 
+==10921== Conditional jump or move depends on uninitialised value(s)
+==10921==    at 0x4C2D0B0: memcpy@@GLIBC_2.14 (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==10921==    by 0x400A30: trimString (facts.c:104)
+==10921==    by 0x4011F7: write (facts.c:273)
+==10921==    by 0x4008A4: main (facts.c:53)
+==10921== 
+==10921== Conditional jump or move depends on uninitialised value(s)
+==10921==    at 0x4C2D0C1: memcpy@@GLIBC_2.14 (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==10921==    by 0x400A30: trimString (facts.c:104)
+==10921==    by 0x4011F7: write (facts.c:273)
+==10921==    by 0x4008A4: main (facts.c:53)
+==10921== 
+==10921== Conditional jump or move depends on uninitialised value(s)
+==10921==    at 0x4C2D146: memcpy@@GLIBC_2.14 (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==10921==    by 0x400A30: trimString (facts.c:104)
+==10921==    by 0x4011F7: write (facts.c:273)
+==10921==    by 0x4008A4: main (facts.c:53)
+==10921== 
+==10921== Use of uninitialised value of size 8
+==10921==    at 0x4C2D1A0: memcpy@@GLIBC_2.14 (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==10921==    by 0x400A30: trimString (facts.c:104)
+==10921==    by 0x4011F7: write (facts.c:273)
+==10921==    by 0x4008A4: main (facts.c:53)
+==10921== 
+==10921== Use of uninitialised value of size 8
+==10921==    at 0x4C2D1AD: memcpy@@GLIBC_2.14 (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==10921==    by 0x400A30: trimString (facts.c:104)
+==10921==    by 0x4011F7: write (facts.c:273)
+==10921==    by 0x4008A4: main (facts.c:53)
+==10921== 
+==10921== Conditional jump or move depends on uninitialised value(s)
+==10921==    at 0x401217: write (facts.c:274)
+==10921==    by 0x4008A4: main (facts.c:53)
+==10921== 
+==10921== Conditional jump or move depends on uninitialised value(s)
+==10921==    at 0x40124E: write (facts.c:275)
+==10921==    by 0x4008A4: main (facts.c:53)
+==10921== 
+==10921== Conditional jump or move depends on uninitialised value(s)
+==10921==    at 0x4E7D3B1: vfprintf (vfprintf.c:1630)
+==10921==    by 0x4E858D8: printf (printf.c:35)
+==10921==    by 0x4013D5: write (facts.c:290)
+==10921==    by 0x4008A4: main (facts.c:53)
+==10921== 
+==10921== Conditional jump or move depends on uninitialised value(s)
+==10921==    at 0x4C2E0A8: memset (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==10921==    by 0x401404: write (facts.c:296)
+==10921==    by 0x4008A4: main (facts.c:53)
+==10921== 
+==10921== Use of uninitialised value of size 8
+==10921==    at 0x4C2E0E0: memset (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==10921==    by 0x401404: write (facts.c:296)
+==10921==    by 0x4008A4: main (facts.c:53)
+==10921== 
+==10921== Use of uninitialised value of size 8
+==10921==    at 0x4C2E0EB: memset (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==10921==    by 0x401404: write (facts.c:296)
+==10921==    by 0x4008A4: main (facts.c:53)
+==10921== 
+==10921== Conditional jump or move depends on uninitialised value(s)
+==10921==    at 0x401420: write (facts.c:297)
+==10921==    by 0x4008A4: main (facts.c:53)
+==10921== 
+==10921== Conditional jump or move depends on uninitialised value(s)
+==10921==    at 0x401458: write (facts.c:298)
+==10921==    by 0x4008A4: main (facts.c:53)
+==10921== 
+==10921== Conditional jump or move depends on uninitialised value(s)
+==10921==    at 0x401490: write (facts.c:299)
+==10921==    by 0x4008A4: main (facts.c:53)
+==10921== 
+==10921== Conditional jump or move depends on uninitialised value(s)
+==10921==    at 0x4C2D146: memcpy@@GLIBC_2.14 (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==10921==    by 0x400A30: trimString (facts.c:104)
+==10921==    by 0x4014F7: write (facts.c:310)
+==10921==    by 0x4008A4: main (facts.c:53)
+==10921== 
+==10921== 
+==10921== HEAP SUMMARY:
+==10921==     in use at exit: 1,607 bytes in 23 blocks
+==10921==   total heap usage: 23 allocs, 0 frees, 1,607 bytes allocated
+==10921== 
+==10921== LEAK SUMMARY:
+==10921==    definitely lost: 471 bytes in 21 blocks
+==10921==    indirectly lost: 0 bytes in 0 blocks
+==10921==      possibly lost: 0 bytes in 0 blocks
+==10921==    still reachable: 1,136 bytes in 2 blocks
+==10921==         suppressed: 0 bytes in 0 blocks
+==10921== Rerun with --leak-check=full to see details of leaked memory
+==10921== 
+==10921== For counts of detected and suppressed errors, rerun with: -v
+==10921== Use --track-origins=yes to see where uninitialised values come from
+==10921== ERROR SUMMARY: 800 errors from 39 contexts (suppressed: 2 from 2)

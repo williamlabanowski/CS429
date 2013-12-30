@@ -1,0 +1,4 @@
+FPDP11:number_registers=8
+FCDC6600:number_registers=24
+FIBM360:opcode_bits=8
+FARM:number_registers=unknown

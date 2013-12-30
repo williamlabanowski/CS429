@@ -1,0 +1,8 @@
+      200000 addresses (133469 Fetch, 40212 Load, 26319 Store)
+full main cache: 256 entries of lines of 64 bytes; fully associative, write-back, LRU
+full main cache: 205515 accesses, 205222 hits (99%), 293 misses, 292 miss reads, 4 miss writes
+full main cache: 42 dirty cache lines remain
+full victim cache: 8 entries of lines of 64 bytes; fully associative, write-back, FIFO
+full victim cache: 37 accesses, 1 hits (2%), 36 misses, 36 miss reads, 1 miss writes
+full victim cache: 2 dirty cache lines remain
+

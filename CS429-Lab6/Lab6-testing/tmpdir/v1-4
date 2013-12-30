@@ -1,0 +1,8 @@
+      400000 addresses (288259 Fetch, 80098 Load, 31643 Store)
+direct main cache: 256 entries of lines of 64 bytes; direct-mapped, write-back, LRU
+direct main cache: 411104 accesses, 399082 hits (97%), 12022 misses, 10215 miss reads, 2321 miss writes
+direct main cache: 48 dirty cache lines remain
+direct victim cache: 4 entries of lines of 64 bytes; fully associative, write-back, FIFO
+direct victim cache: 11766 accesses, 1807 hits (15%), 9959 misses, 9959 miss reads, 1576 miss writes
+direct victim cache: 1 dirty cache lines remain
+

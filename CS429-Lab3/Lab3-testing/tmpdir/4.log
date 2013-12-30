@@ -1,0 +1,62 @@
+==10948== Memcheck, a memory error detector
+==10948== Copyright (C) 2002-2011, and GNU GPL'd, by Julian Seward et al.
+==10948== Using Valgrind-3.7.0 and LibVEX; rerun with -h for copyright info
+==10948== Command: ./facts cases/long.fax cases/long.q
+==10948== Parent PID: 10946
+==10948== 
+==10948== Invalid write of size 1
+==10948==    at 0x400F74: read (facts.c:195)
+==10948==    by 0x400880: main (facts.c:49)
+==10948==  Address 0x51f23c0 is 0 bytes after a block of size 256 alloc'd
+==10948==    at 0x4C2B6CD: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==10948==    by 0x400A8A: read (facts.c:117)
+==10948==    by 0x400880: main (facts.c:49)
+==10948== 
+==10948== Invalid read of size 1
+==10948==    at 0x4009A2: trimString (facts.c:97)
+==10948==    by 0x400EDB: read (facts.c:186)
+==10948==    by 0x400880: main (facts.c:49)
+==10948==  Address 0x51f23c0 is 0 bytes after a block of size 256 alloc'd
+==10948==    at 0x4C2B6CD: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==10948==    by 0x400A8A: read (facts.c:117)
+==10948==    by 0x400880: main (facts.c:49)
+==10948== 
+==10948== Invalid read of size 1
+==10948==    at 0x4009E4: trimString (facts.c:100)
+==10948==    by 0x400EDB: read (facts.c:186)
+==10948==    by 0x400880: main (facts.c:49)
+==10948==  Address 0x51f49d4 is not stack'd, malloc'd or (recently) free'd
+==10948== 
+--10948-- VALGRIND INTERNAL ERROR: Valgrind received a signal 11 (SIGSEGV) - exiting
+--10948-- si_code=80;  Faulting address: 0x0;  sp: 0x402bdae00
+
+valgrind: the 'impossible' happened:
+   Killed by fatal signal
+==10948==    at 0x38058236: ??? (in /usr/lib/valgrind/memcheck-amd64-linux)
+==10948==    by 0x38021ADC: ??? (in /usr/lib/valgrind/memcheck-amd64-linux)
+==10948==    by 0x38021C6A: ??? (in /usr/lib/valgrind/memcheck-amd64-linux)
+==10948==    by 0x380902A7: ??? (in /usr/lib/valgrind/memcheck-amd64-linux)
+==10948==    by 0x3809F7D5: ??? (in /usr/lib/valgrind/memcheck-amd64-linux)
+
+sched status:
+  running_tid=1
+
+Thread 1: status = VgTs_Runnable
+==10948==    at 0x4C2B6CD: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==10948==    by 0x400A0B: trimString (facts.c:103)
+==10948==    by 0x400EDB: read (facts.c:186)
+==10948==    by 0x400880: main (facts.c:49)
+
+
+Note: see also the FAQ in the source distribution.
+It contains workarounds to several common problems.
+In particular, if Valgrind aborted or crashed after
+identifying problems in your program, there's a good chance
+that fixing those problems will prevent Valgrind aborting or
+crashing, especially if it happened in m_mallocfree.c.
+
+If that doesn't help, please report this bug to: www.valgrind.org
+
+In the bug report, send all the above text, the valgrind
+version, and what OS and version you are using.  Thanks.
+
